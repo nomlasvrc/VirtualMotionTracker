@@ -18,14 +18,14 @@
   },
   "input_source" :
   {
-    "/input/Button0" : { 
+    "/input/Home" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 1
     },
-    "/input/Button1" : { 
+    "/input/A" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
@@ -39,110 +39,68 @@
         "binding_image_point" : [ 0, 0 ],
         "order" : 3
     },
-    "/input/Button3" : { 
+    "/input/B" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 4
     },
-    "/input/Button4" : { 
+    "/input/One" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 5
     },
-    "/input/Button5" : { 
+    "/input/Two" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 6
     },
-    "/input/Button6" : { 
+    "/input/Left" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 7
     },
-    "/input/Button7" : { 
+    "/input/Right" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 8
     },
-    "/input/Button8" : { 
+    "/input/Up" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 9
     },
-    "/input/Button9" : { 
+    "/input/Down" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 10
     },
-    "/input/Button10" : { 
+    "/input/Plus" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 11
     },
-    "/input/Button11" : { 
+    "/input/Minus" : { 
         "type" : "button",
         "click" : true,
         "touch" : true,
         "binding_image_point" : [ 0, 0 ],
         "order" : 12
-    },
-    "/input/Button12" : { 
-        "type" : "button",
-        "click" : true,
-        "touch" : true,
-        "binding_image_point" : [ 0, 0 ],
-        "order" : 13
-    },
-    "/input/Button13" : { 
-        "type" : "button",
-        "click" : true,
-        "touch" : true,
-        "binding_image_point" : [ 0, 0 ],
-        "order" : 14
-    },
-    "/input/Button14" : { 
-        "type" : "button",
-        "click" : true,
-        "touch" : true,
-        "binding_image_point" : [ 0, 0 ],
-        "order" : 15
-    },
-    "/input/Button15" : { 
-        "type" : "button",
-        "click" : true,
-        "touch" : true,
-        "binding_image_point" : [ 0, 0 ],
-        "order" : 16
-    },
-    "/input/Button16" : { 
-        "type" : "button",
-        "click" : true,
-        "touch" : true,
-        "binding_image_point" : [ 0, 0 ],
-        "order" : 17
-    },
-    "/input/Button17" : { 
-        "type" : "button",
-        "click" : true,
-        "touch" : true,
-        "binding_image_point" : [ 0, 0 ],
-        "order" : 18
     },
     "/input/Joystick0" : { 
         "type" : "joystick",
