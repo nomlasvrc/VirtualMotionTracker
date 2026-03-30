@@ -223,6 +223,22 @@ namespace VMTDriver {
         {{-0.00326260f,-0.03468513f,0.13992580f,1.00000000f},{0.01969014f,-0.10074140f,0.95733130f,0.27014860f}}
 	};
 
+    // modified by Nomlas
+    static const char* ButtonNames[] = {
+        "Home",   // 0
+        "A",      // 1
+        "Button2",// 2
+        "B",      // 3
+        "One",    // 4
+        "Two",    // 5
+        "Left",   // 6
+        "Right",  // 7
+        "Up",     // 8
+        "Down",   // 9
+        "Plus",   // 10
+        "Minus"   // 11
+    };
+
     //** 内部向け関数群 **
 
     //自動更新を有効にするか
@@ -1085,8 +1101,10 @@ namespace VMTDriver {
 
         //OpenVR デバイス入力情報の定義
         for (int i = 0; i < buttonCount; i++) {
-            LogIfEVRInputError(VRDriverInput()->CreateBooleanComponent(m_propertyContainer, (std::string("/input/Button") + std::to_string(i) + std::string("/click")).c_str(), &ButtonComponent[i]));
-            LogIfEVRInputError(VRDriverInput()->CreateBooleanComponent(m_propertyContainer, (std::string("/input/Button") + std::to_string(i) + std::string("/touch")).c_str(), &ButtonTouchComponent[i]));
+            const char* name = ButtonNames[i];
+            std::string base = std::string("/input/") + name;
+            LogIfEVRInputError(VRDriverInput()->CreateBooleanComponent(m_propertyContainer, (base + "/click").c_str(), &ButtonComponent[i]));
+            LogIfEVRInputError(VRDriverInput()->CreateBooleanComponent(m_propertyContainer, (base + "/touch").c_str(), &ButtonTouchComponent[i]));
         }
         for (int i = 0; i < triggerCount; i++) {
             LogIfEVRInputError(VRDriverInput()->CreateScalarComponent(m_propertyContainer, (std::string("/input/Trigger") + std::to_string(i) + std::string("/value")).c_str(), &TriggerComponent[i], EVRScalarType::VRScalarType_Absolute, EVRScalarUnits::VRScalarUnits_NormalizedOneSided));

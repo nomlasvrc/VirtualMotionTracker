@@ -29,7 +29,7 @@ SOFTWARE.
 namespace VMTDriver {
     const HmdQuaternion_t HmdQuaternion_Identity{ 1,0,0,0 };
     const int skeletonBoneCount{ 31 };
-    const int buttonCount{ 18 };
+    const int buttonCount{ 12 };// modified by Nomlas (12に減らした)
     const int triggerCount{ 9 };
     const int joystickCount{ 4 };
 

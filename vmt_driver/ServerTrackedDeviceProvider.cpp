@@ -217,7 +217,7 @@ namespace VMTDriver {
         CommunicationManager::GetInstance()->Open();
 
         //仮想デバイスを準備
-        m_devices.resize(58); //58デバイス(全合計64に満たないくらい)
+        m_devices.resize(8); //8デバイス(あえて少なくした by Nomlas)
 
         //仮想デバイスを初期化
         for (int i = 0; i < m_devices.size(); i++)
